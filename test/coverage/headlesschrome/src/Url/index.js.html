@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/Clone/index.js</title>
+    <title>Code coverage report for src/Url/index.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -16,18 +16,18 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../index.html">all files</a> / <a href="index.html">src/Clone/</a> index.js
+      <a href="../../index.html">all files</a> / <a href="index.html">src/Url/</a> index.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/17</span>
+        <span class='fraction'>0/23</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/10</span>
+        <span class='fraction'>0/14</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/17</span>
+        <span class='fraction'>0/22</span>
       </div>
     </div>
   </div>
@@ -88,7 +88,31 @@
 43
 44
 45
-46</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+46
+47
+48</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -100,83 +124,65 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {typeOf} from '../Type'
-&nbsp;
-/**
-* copy 浅拷贝
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+* toQueryString url参数转对象
 * @since 1.0.0
-* @param {Object | Array} data
-* @returns {Object | Array}
+* @param {String} url default:window.location.href
+* @returns {Object}
 */
-export function copy(data)<span class="fstat-no" title="function not covered" >{</span>
-  let data2 = <span class="cstat-no" title="statement not covered" >Array.isArray(data) ? [] : {};</span>
-<span class="cstat-no" title="statement not covered" >  for (let i in data) {</span>
-<span class="cstat-no" title="statement not covered" >    data2[i] = data[i];</span>
+export function toQueryString(url) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  url = !url ? window.location.href : url;</span>
+<span class="cstat-no" title="statement not covered" >  if(url.indexOf('?') === -1) {</span>
+<span class="cstat-no" title="statement not covered" >    return {};</span>
   }
-<span class="cstat-no" title="statement not covered" >  return data2;</span>
+  let search = <span class="cstat-no" title="statement not covered" >url[0] === '?' ? url.substr(1) : url.substring(url.lastIndexOf('?') + 1);</span>
+<span class="cstat-no" title="statement not covered" >  if (search === '') {</span>
+<span class="cstat-no" title="statement not covered" >    return {};</span>
+  }
+<span class="cstat-no" title="statement not covered" >  search = search.split('&amp;');</span>
+  let query = <span class="cstat-no" title="statement not covered" >{};</span>
+<span class="cstat-no" title="statement not covered" >  for (let i = 0; i &lt; search.length; i++) {</span>
+    let pair = <span class="cstat-no" title="statement not covered" >search[i].split('=');</span>
+<span class="cstat-no" title="statement not covered" >    query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');</span>
+  }
+<span class="cstat-no" title="statement not covered" >  return query;</span>
 }
 &nbsp;
 /**
-* deep 深拷贝
+* stringify 对象序列化
 * @since 1.0.0
-* @param {Object | Array} data
-* @returns {Object | Array}
+* @param {Object} obj
+* @returns {String}
 */
-export function deep(data)<span class="fstat-no" title="function not covered" >{</span>
-  const t = <span class="cstat-no" title="statement not covered" >typeOf(data);</span>
-  let o;
+export function stringify(obj) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  if (!obj) <span class="cstat-no" title="statement not covered" >return '';</span></span>
+  let pairs = <span class="cstat-no" title="statement not covered" >[];</span>
+<span class="cstat-no" title="statement not covered" >  for (let key in obj) {</span>
+    let value = <span class="cstat-no" title="statement not covered" >obj[key];</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (t === 'array') {</span>
-<span class="cstat-no" title="statement not covered" >    o = [];</span>
-  } else <span class="cstat-no" title="statement not covered" >if ( t === 'object') {</span>
-<span class="cstat-no" title="statement not covered" >    o = {};</span>
-  } else {
-<span class="cstat-no" title="statement not covered" >    return data;</span>
+<span class="cstat-no" title="statement not covered" >    if (value instanceof Array) {</span>
+<span class="cstat-no" title="statement not covered" >      for (let i = 0; i &lt; value.length; ++i) {</span>
+<span class="cstat-no" title="statement not covered" >        pairs.push(encodeURIComponent(key + '[' + i + ']') + '=' + encodeURIComponent(value[i]));</span>
+      }
+<span class="cstat-no" title="statement not covered" >      continue;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    pairs.push(encodeURIComponent(key) + '=' + encodeURIComponent(obj[key]));</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (t === 'array') {</span>
-<span class="cstat-no" title="statement not covered" >    for (let i = 0; i &lt; data.length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >      o.push(deep(data[i]));</span>
-    }
-  } else <span class="cstat-no" title="statement not covered" >if ( t === 'object') {</span>
-<span class="cstat-no" title="statement not covered" >    for (let i in data) {</span>
-<span class="cstat-no" title="statement not covered" >      o[i] = deep(data[i]);</span>
-    }
-  }
-<span class="cstat-no" title="statement not covered" >  return o;</span>
+<span class="cstat-no" title="statement not covered" >  return pairs.join('&amp;');</span>
 }
 &nbsp;</pre></td></tr>
 </table></pre>

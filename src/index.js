@@ -15,7 +15,7 @@ import * as Type from './Type'
 import * as Ua from './Ua'
 import * as Url from './Url'
 
-module.exports = {
+export default {
   Array,
   Clone,
   Date,

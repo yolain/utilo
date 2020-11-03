@@ -28,6 +28,7 @@ export function toDecimal(x,val) {
 * toFloat 保留小数点${x}位 (截断)
 * @since 1.0.0
 * @param {Number} x
+* @param {Number | String} val
 * @returns {Number}
 */
 export function toFloat(x,val){
@@ -55,7 +56,7 @@ export function money(val,x=2){
   val=parseFloat(val+"").toFixed();
   val=val+""; //转换成字符串
   if(parseFloat(val) < 0){ //是负数
-    s = Math.abs(val).toFixed(x) + "";
+    val = Math.abs(val).toFixed(x) + "";
     noNegative = false;
   }
   let zheng=val.split(".")[0];
@@ -105,7 +106,7 @@ export function bankcard(val) {
   return val.replace(/(.{4})/g, '$1 ')
 }
 /**
-* plysStr 在字段中间加特殊字符
+* plusStr 在字段中间加特殊字符
 * @since 1.0.0
 * @param {String} str
 * @param {Number} frontLen 起始不被遮盖的长度

@@ -37,5 +37,9 @@
     "mocha": "^4.0.1",
     "power-assert": "^1.4.4",
     "webpack": "^3.8.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
 }

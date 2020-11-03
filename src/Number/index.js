@@ -44,7 +44,7 @@ export function accSub(arg1, arg2) {
   return ((arg1 * max - arg2 * max) / max).toFixed(min)
 }
 /**
- * accSub 高精度乘法
+ * accMul 高精度乘法
  * @since 1.0.0
  * @param {Number} arg1
  * @param {Number} arg2
@@ -57,7 +57,7 @@ export function accMul(arg1, arg2) {
   return Number(s1.replace(".", "")) * Number(s2.replace(".", "")) / Math.pow(10, max)
 }
 /**
- * accSub 高精度除法
+ * accDiv 高精度除法
  * @since 1.0.0
  * @param {Number} arg1
  * @param {Number} arg2
