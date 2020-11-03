@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/Ua/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/Ua/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">16.33% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>8/49</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">43.9% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>18/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">16.33% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>8/49</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// 参考 https://github.com/mumuy/browser
+&nbsp;
+let u = navigator.userAgent
+&nbsp;
+let match = {
+  //内核
+  'Trident': u.indexOf('Trident') &gt; -1 || u.indexOf('NET CLR') &gt; -1,
+  'Presto': u.indexOf('Presto') &gt; -1,
+  'WebKit': u.indexOf('AppleWebKit') &gt; -1,
+  'Gecko': u.indexOf('Gecko/') &gt; -1,
+  'KHTML': u.indexOf('KHTML/') &gt; -1,
+  //h5+app
+  'Html5Plus':u.indexOf('Html5Plus') &gt; -1,
+  //系统或平台
+  'Windows': u.indexOf('Windows') &gt; -1,
+  'Linux': u.indexOf('Linux') &gt; -1 || u.indexOf('X11') &gt; -1,
+  'Mac OS': u.indexOf('Macintosh') &gt; -1,
+  'Android': u.indexOf('Android') &gt; -1 || u.indexOf('Adr') &gt; -1,
+  'Ubuntu': u.indexOf('Ubuntu') &gt; -1,
+  'FreeBSD': u.indexOf('FreeBSD') &gt; -1,
+  'Debian': u.indexOf('Debian') &gt; -1,
+  'Windows Phone': u.indexOf('IEMobile') &gt; -1 || u.indexOf('Windows Phone') &gt; -1,
+  'BlackBerry': u.indexOf('BlackBerry') &gt; -1 || u.indexOf('RIM') &gt; -1,
+  'MeeGo': u.indexOf('MeeGo') &gt; -1,
+  'Symbian': u.indexOf('Symbian') &gt; -1,
+  'iOS': u.indexOf('like Mac OS X') &gt; -1,
+  'Chrome OS': u.indexOf('CrOS') &gt; -1,
+  'WebOS': u.indexOf('hpwOS') &gt; -1,
+  //设备
+  'Mobile': u.indexOf('Mobi') &gt; -1 || u.indexOf('iPh') &gt; -1 || u.indexOf('480') &gt; -1,
+  'Tablet': u.indexOf('Tablet') &gt; -1 || u.indexOf('Pad') &gt; -1 || u.indexOf('Nexus 7') &gt; -1
+}
+&nbsp;
+let hash = {
+  engine: ['WebKit', 'Trident', 'Gecko', 'Presto', 'KHTML'],
+  os: ['Windows', 'Linux', 'Mac OS', 'Android', 'Ubuntu', 'FreeBSD', 'Debian', 'iOS', 'Windows Phone', 'BlackBerry', 'MeeGo', 'Symbian', 'Chrome OS', 'WebOS'],
+  device: ['Mobile', 'Tablet']
+};
+&nbsp;
+for (let key in hash) {
+  for (let item of hash[key]) {
+    if (match[item]) {
+      hash[key] = item;
+    }
+  }
+}
+&nbsp;
+&nbsp;
+function getLanguage() <span class="fstat-no" title="function not covered" >{</span>
+  // @ts-ignore
+<span class="cstat-no" title="statement not covered" >  return (navigator.browserLanguage || navigator.language).toLowerCase()</span>
+}
+&nbsp;
+&nbsp;
+&nbsp;
+function getEngine() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return hash.engine</span>
+}
+&nbsp;
+function getOs() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return hash.os</span>
+}
+&nbsp;
+let osVersion = {
+  'Windows': function () <span class="fstat-no" title="function not covered" >{</span>
+    let v = <span class="cstat-no" title="statement not covered" >u.replace(/^Mozilla\/\d.0 \(Windows NT ([\d.]+);.*$/, '$1');</span>
+    let hash = <span class="cstat-no" title="statement not covered" >{</span>
+      '10': '10',
+      '6.4': '10',
+      '6.3': '8.1',
+      '6.2': '8',
+      '6.1': '7',
+      '6.0': 'Vista',
+      '5.2': 'XP',
+      '5.1': 'XP',
+      '5.0': '2000'
+    };
+<span class="cstat-no" title="statement not covered" >    return hash[v] || v;</span>
+  },
+  'Android': function () <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    return u.replace(/^.*Android ([\d.]+);.*$/, '$1');</span>
+  },
+  'iOS': function () <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    return u.replace(/^.*OS ([\d_]+) like.*$/, '$1').replace(/_/g, '.');</span>
+  },
+  'Debian': function () <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    return u.replace(/^.*Debian\/([\d.]+).*$/, '$1');</span>
+  },
+  'Windows Phone': function () <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    return u.replace(/^.*Windows Phone( OS)? ([\d.]+);.*$/, '$2');</span>
+  },
+  'Mac OS': function () <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    return u.replace(/^.*Mac OS X ([\d_]+).*$/, '$1').replace(/_/g, '.');</span>
+  },
+  'WebOS': function () <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    return u.replace(/^.*hpwOS\/([\d.]+);.*$/, '$1');</span>
+  }
+};
+function getOsVersion() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return osVersion[hash.os]();</span>
+}
+&nbsp;
+function getDevice() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  if (typeof hash.device != 'string') {</span>
+<span class="cstat-no" title="statement not covered" >    return 'PC'</span>
+  } else {
+<span class="cstat-no" title="statement not covered" >    return hash.device</span>
+  }
+}
+&nbsp;
+function isIE() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return u.indexOf('MSIE') &gt; -1 || u.indexOf('Trident') &gt; -1;</span>
+}
+&nbsp;
+function getIEVersion() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return u.replace(/^.*MSIE ([\d.]+).*$/, '$1').replace(/^.*rv:([\d.]+).*$/, '$1');</span>
+}
+&nbsp;
+function isPC() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return !match.Tablet || !match.Mobile</span>
+}
+function isWin()<span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return match.Windows</span>
+}
+function isMac()<span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return match["Mac OS"]</span>
+}
+&nbsp;
+function isTablet() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return match.Tablet</span>
+}
+function isMobile() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return match.Mobile</span>
+}
+function isIos()<span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return match.iOS</span>
+}
+function isAndroid()<span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return match.Android</span>
+}
+function isApp()<span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return match.Html5Plus</span>
+}
+&nbsp;
+function isCanvas() <span class="fstat-no" title="function not covered" >{</span>
+  let elem = <span class="cstat-no" title="statement not covered" >document.createElement('canvas');</span>
+<span class="cstat-no" title="statement not covered" >  return !!(elem.getContext &amp;&amp; elem.getContext('2d'));</span>
+}
+&nbsp;
+function isWebgl() <span class="fstat-no" title="function not covered" >{</span>
+  let elem = <span class="cstat-no" title="statement not covered" >document.createElement('canvas');</span>
+<span class="cstat-no" title="statement not covered" >  return !!(window.WebGLRenderingContext &amp;&amp; ( elem.getContext( 'webgl' ) || elem.getContext( 'experimental-webgl' ) ));</span>
+}
+&nbsp;
+function isSvg() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return !!document.createElementNS &amp;&amp; !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;</span>
+}
+&nbsp;
+&nbsp;
+function isWebsocket() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return 'WebSocket' in window || 'MozWebSocket' in window;</span>
+}
+&nbsp;
+function isWorker() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return !!window.Worker;</span>
+}
+&nbsp;
+function isLocalStorage() <span class="fstat-no" title="function not covered" >{</span>
+  let key = <span class="cstat-no" title="statement not covered" >(+new Date()).toString();</span>
+<span class="cstat-no" title="statement not covered" >  try {</span>
+<span class="cstat-no" title="statement not covered" >    localStorage.setItem(key, key);</span>
+<span class="cstat-no" title="statement not covered" >    localStorage.removeItem(key);</span>
+<span class="cstat-no" title="statement not covered" >    return true;</span>
+  } catch (e) {
+<span class="cstat-no" title="statement not covered" >    return false;</span>
+  }
+}
+&nbsp;
+function isGeolocation() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return 'geolocation' in navigator;</span>
+}
+&nbsp;
+function isFile() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  return !!(window.File &amp;&amp; window.FileReader &amp;&amp; window.FileList &amp;&amp; window.Blob)</span>
+}
+&nbsp;
+export {
+  getLanguage,
+  getEngine,
+  getOs,
+  getOsVersion,
+  getDevice,
+  getIEVersion,
+  isIE,
+  isPC,
+  isMac,
+  isWin,
+  isTablet,
+  isMobile,
+  isAndroid,
+  isIos,
+  isApp,
+  isCanvas,
+  isWebgl,
+  isSvg,
+  isWebsocket,
+  isWorker,
+  isLocalStorage,
+  isGeolocation,
+  isFile
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Nov 03 2020 19:00:28 GMT+0800 (Taipei Standard Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

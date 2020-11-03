@@ -1,0 +1,35 @@
+module.exports = {
+  date:{
+    ago:'前',
+    year:'年',
+    years:'年',
+    month:'月',
+    months:'月',
+    week:'周',
+    weeks:'周',
+    day:'天',
+    days:'天',
+    hour:'小时',
+    hours:'小时',
+    minute:'分钟',
+    minutes:'分钟',
+    second:'秒',
+    seconds:'秒',
+
+    year_ago:'年前',
+    years_ago:'年前',
+    month_ago:'月前',
+    months_ago:'月前',
+    week_ago:'周前',
+    weeks_ago:'周前',
+    day_ago:'天前',
+    days_ago:'天前',
+    hour_ago:'小时前',
+    hours_ago:'小时前',
+    minute_ago:'分钟前',
+    minutes_ago:'分钟前',
+    second_ago:'秒前',
+    seconds_ago:'秒前',
+    just:'刚刚'
+  }
+}

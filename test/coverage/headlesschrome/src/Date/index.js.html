@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/Date/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/Date/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/54</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/66</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/52</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {testDateFormat, testLang, testTimeZone} from "../Test";
+import Lang from '../Lang'
+&nbsp;
+/**
+ * formatTime 格式化日期与时间
+ * @since 1.0.0
+ * @param {Number} time 传入时间戳 默认当前时间
+ * @param {String} format 返回日期时间的格式
+ * @param {String} lang 语言
+ * @returns {String}
+ */
+export function formatTime(time = 0, format = 'YYYY-MM-DD hh:mm:ss', lang = 'zh-CN') <span class="fstat-no" title="function not covered" >{</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  testLang(lang)</span>
+<span class="cstat-no" title="statement not covered" >  testDateFormat(format)</span>
+&nbsp;
+  const now = <span class="cstat-no" title="statement not covered" >new Date().getTime()</span>
+<span class="cstat-no" title="statement not covered" >  if (!time) <span class="cstat-no" title="statement not covered" >time = now</span></span>
+<span class="cstat-no" title="statement not covered" >  while (time.toString().length &lt; 13) <span class="cstat-no" title="statement not covered" >time += '0'</span></span>
+  const date = <span class="cstat-no" title="statement not covered" >new Date(time)</span>
+<span class="cstat-no" title="statement not covered" >  date.getMonth()</span>
+  /* 补0 */
+  const formatNumber = <span class="cstat-no" title="statement not covered" >(n)=&gt;<span class="fstat-no" title="function not covered" >{</span></span>
+    const str = <span class="cstat-no" title="statement not covered" >n.toString()</span>
+<span class="cstat-no" title="statement not covered" >    return str[1] ? str : `0${str}`</span>
+  }
+  /* 参数集 年-月-日 时:分:秒 */
+  const arg = <span class="cstat-no" title="statement not covered" >{</span>
+    year: date.getFullYear(),
+    month: formatNumber(date.getMonth() + 1),
+    day: formatNumber(date.getDate()),
+    hours: formatNumber(date.getHours()),
+    minutes: formatNumber(date.getMinutes()),
+    seconds: formatNumber(date.getSeconds())
+  }
+&nbsp;
+  /* 判断有没有指定的时间格式 */
+<span class="cstat-no" title="statement not covered" >  switch (format) {</span>
+    case 'YYYY-MM-DD hh:mm:ss':
+<span class="cstat-no" title="statement not covered" >      return `${arg.year}-${arg.month}-${arg.day} ${arg.hours}:${arg.minutes}:${arg.seconds}`</span>
+    case 'YYYY/MM/DD hh:mm:ss':
+<span class="cstat-no" title="statement not covered" >      return `${arg.year}/${arg.month}/${arg.day} ${arg.hours}:${arg.minutes}:${arg.seconds}`</span>
+    case 'YYYY-MM-DD':
+<span class="cstat-no" title="statement not covered" >      return `${arg.year}-${arg.month}-${arg.day}`</span>
+    case 'YYYY/MM/DD':
+<span class="cstat-no" title="statement not covered" >      return `${arg.year}-${arg.month}-${arg.day}`</span>
+    case 'MM-DD':
+<span class="cstat-no" title="statement not covered" >      return `${arg.month}-${arg.day}`</span>
+    case 'MM/DD':
+<span class="cstat-no" title="statement not covered" >      return `${arg.month}/${arg.day}`</span>
+    case 'hh:mm:ss':
+<span class="cstat-no" title="statement not covered" >      return `${arg.hours}:${arg.minutes}:${arg.seconds}`</span>
+    case 'hh:mm':
+<span class="cstat-no" title="statement not covered" >      return `${arg.hours}:${arg.minutes}`</span>
+    case 'computed'://判断是不是需要进行计算
+    case 'timeAgo':
+<span class="cstat-no" title="statement not covered" >      if (now &gt;=time) {</span>
+        const langStr = <span class="cstat-no" title="statement not covered" >Lang[lang]['date']</span>
+        const dt = <span class="cstat-no" title="statement not covered" >Math.abs(time - now),</span>    //时间已过去多少毫秒
+          S = <span class="cstat-no" title="statement not covered" >dt / 1000,</span>    //秒
+          M = <span class="cstat-no" title="statement not covered" >S / 60,</span>  //分
+          H = <span class="cstat-no" title="statement not covered" >M / 60,</span>  //小时
+          D = <span class="cstat-no" title="statement not covered" >H / 24,</span>   //天
+          W = <span class="cstat-no" title="statement not covered" >D / 7,</span>    //周
+          m = <span class="cstat-no" title="statement not covered" >D / 31,</span> // 月
+          Y = <span class="cstat-no" title="statement not covered" >D / 365 </span>// 年
+<span class="cstat-no" title="statement not covered" >        if (~~Y &gt; 0 &amp;&amp; Y &lt; 3) {</span>
+<span class="cstat-no" title="statement not covered" >          return ~~Y + (Y&gt;1 ? langStr['years_ago'] :langStr['year_ago'])</span>
+        } else <span class="cstat-no" title="statement not covered" >if (~~m &gt; 0 &amp;&amp; m &lt; 12) {</span>
+<span class="cstat-no" title="statement not covered" >          return ~~m + (m&gt;1 ? langStr['months_ago'] :langStr['month_ago'])</span>
+        } else <span class="cstat-no" title="statement not covered" >if (~~W &gt; 0 &amp;&amp; W &lt; 3) {</span>
+<span class="cstat-no" title="statement not covered" >          return ~~W + (W&gt;1 ? langStr['weeks_ago'] :langStr['week_ago'])</span>
+        } else <span class="cstat-no" title="statement not covered" >if (D &lt; 7 &amp;&amp; ~~D &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >          return ~~D + (D&gt;1 ? langStr['days_ago'] : langStr['day_ago'])</span>
+        } else <span class="cstat-no" title="statement not covered" >if (~~H &gt; 0 &amp;&amp; H &lt; 24) {</span>
+<span class="cstat-no" title="statement not covered" >          return ~~H + (H&gt;1 ? langStr['hours_ago'] : langStr['hour_ago'])</span>
+        } else <span class="cstat-no" title="statement not covered" >if (~~M &gt; 0 &amp;&amp; M &lt; 60) {</span>
+<span class="cstat-no" title="statement not covered" >          return ~~M + (M&gt;1 ? langStr['minutes_ago'] : langStr['hour_ago'])</span>
+        } else <span class="cstat-no" title="statement not covered" >if (~~S &gt; 0 &amp;&amp; S &lt; 60) {</span>
+<span class="cstat-no" title="statement not covered" >          return ~~S + (S&gt;1 ? langStr['seconds_ago'] :langStr['second_ago'])</span>
+        } else <span class="cstat-no" title="statement not covered" >if(~~S == 0){</span>
+<span class="cstat-no" title="statement not covered" >          return Lang[lang]['date']['just']</span>
+        }
+      } else {
+<span class="cstat-no" title="statement not covered" >        console.warn('This is Future\'s time')</span>
+      }
+<span class="cstat-no" title="statement not covered" >      return `${arg.year}-${arg.month}-${arg.day} ${arg.hours}:${arg.minutes}:${arg.seconds}`</span>
+  }
+}
+&nbsp;
+&nbsp;
+/**
+* changeTimezone 更改时区时间
+* @since 1.0.0
+* @param {Number} time 时间戳
+* @param {Number} timezone 当前时区
+* @returns {String}
+*/
+export function exchangeTimezone(time = 0,timezone)<span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  testTimeZone(timezone)</span>
+  let offset_GMT = <span class="cstat-no" title="statement not covered" >new Date().getTimezoneOffset();</span> // 本地时间和格林威治的时间差，单位为分钟
+  let nowDate = <span class="cstat-no" title="statement not covered" >time ? time : new Date().getTime();</span> // 本地时间距 1970 年 1 月 1 日午夜（GMT 时间）之间的毫秒数
+<span class="cstat-no" title="statement not covered" >  return  nowDate + offset_GMT * 60 * 1000 + timezone * 60 * 60 * 1000</span>
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Nov 03 2020 19:00:28 GMT+0800 (Taipei Standard Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
