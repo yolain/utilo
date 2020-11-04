@@ -8,6 +8,7 @@ node_modules
 # folders
 node_modules/*
 coverage/*
+test/coverage/**
 
 # Editor directories and files
 .vscode
