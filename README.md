@@ -100,9 +100,9 @@ deepCopy([{a:1,b:2},{c:3,d:4}])
 
 #### formatTime 格式化日期与时间
 
-__time__ 需传入时间戳（秒级/毫秒级皆可）
+`time` 需传入时间戳（秒级/毫秒级皆可）
 
-__format__ 可传入的类型有：
+`format` 可传入的类型有：
 
 * YYYY-MM-DD hh:mm:ss
 * YYYY/MM/DD hh:mm:ss
@@ -203,7 +203,7 @@ offset(this.$refs.element) // -> {left:0,top:200}
 #### windowResize 软键盘缩回、弹起回调
 
 ```js
-import {windowResize} from 'utilo'
+import {resize} from 'utilo'
 /**
 * windowResize 软键盘缩回、弹起回调
 * 当软件键盘弹起会改变当前 window.innerHeight，监听这个值变化
@@ -211,7 +211,7 @@ import {windowResize} from 'utilo'
 * @param {Function} downCb 当软键盘弹起后，缩回的回调
 * @return {Function} upCb 当软键盘弹起的回调
 */
-windowResize(func1,func2)
+resize(func1,func2)
 ```
 
 ### [Draw] (基础绘图) 
