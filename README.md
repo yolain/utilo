@@ -23,6 +23,25 @@ import {formatTime} from 'utilo' // 引入格式化时间模块
 import {bankcard as bank} from "utilo"; // 如遇命名问题可使用
 ```
 
+### 目录
+
+* [Array - 数组](https://github.com/yolain/utilo#Array-%E6%95%B0%E7%BB%84)
+* [Clone - 克隆](https://github.com/yolain/utilo#clone-%E5%85%8B%E9%9A%86)
+* [Date - 日期与时间](https://github.com/yolain/utilo#date-%E6%97%A5%E6%9C%9F%E4%B8%8E%E6%97%B6%E9%97%B4)
+* [Dom - 文档对象](https://github.com/yolain/utilo#dom-%E6%96%87%E6%A1%A3%E5%AF%B9%E8%B1%A1)
+* [Draw - 基础绘图](https://github.com/yolain/utilo#draw-%E5%9F%BA%E7%A1%80%E7%BB%98%E5%9B%BE)
+* [Format - 格式化](https://github.com/yolain/utilo#format-%E6%A0%BC%E5%BC%8F%E5%8C%96)
+* [Function - 函数](https://github.com/yolain/utilo#function-%E5%87%BD%E6%95%B0)
+* [Keycode - 按键值](https://github.com/yolain/utilo#keycode-%E6%8C%89%E9%94%AE%E5%80%BC)
+* [Number - 数字](https://github.com/yolain/utilo#number-%E6%95%B0%E5%AD%97)
+* [Password - 密码](https://github.com/yolain/utilo#password-%E5%AF%86%E7%A0%81)
+* [Regexp - 正则](https://github.com/yolain/utilo#regexp-%E6%AD%A3%E5%88%99)
+* [String - 字符串](https://github.com/yolain/utilo#string-%E5%AD%97%E7%AC%A6%E4%B8%B2)
+* [Type - 类型](https://github.com/yolain/utilo#type-%E7%B1%BB%E5%9E%8B)
+* [Ua - 浏览器标识](https://github.com/yolain/utilo#ua-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%A0%87%E8%AF%86)
+* [Url - 链接参数](https://github.com/yolain/utilo#url-%E9%93%BE%E6%8E%A5%E5%8F%82%E6%95%B0)
+
+
 ### [Array] (数组)
 
 #### chunk 数组拆分
@@ -465,21 +484,21 @@ plusStr('18812340000',3,4) //-> 188****0000
 
 #### stringify 对象序列化
 
-[Array]:https://github.com/yolain/U/blob/main/src/Array/index.js
-[Clone]:https://github.com/yolain/U/blob/main/src/Clone/index.js
-[Date]:https://github.com/yolain/U/blob/main/src/Date/index.js
-[Dom]:https://github.com/yolain/U/blob/main/src/Dom/index.js
-[Draw]:https://github.com/yolain/U/blob/main/src/Draw/index.js
-[Format]:https://github.com/yolain/U/blob/main/src/Format/index.js
-[Function]:https://github.com/yolain/U/blob/main/src/Function/index.js
-[Keycode]:https://github.com/yolain/U/blob/main/src/Keycode/index.js
-[Number]:https://github.com/yolain/U/blob/main/src/Number/index.js
-[Password]:https://github.com/yolain/U/blob/main/src/Password/index.js
-[Random]:https://github.com/yolain/U/blob/main/src/Random/index.js
-[Regexp]:https://github.com/yolain/U/blob/main/src/Regexp/index.js
-[String]:https://github.com/yolain/U/blob/main/src/String/index.js
-[Type]:https://github.com/yolain/U/blob/main/src/Type/index.js
-[Ua]:https://github.com/yolain/U/blob/main/src/Ua/index.js
-[Url]:https://github.com/yolain/U/blob/main/src/Url/index.js
+[Array]:https://github.com/yolain/utilo/blob/main/src/Array/index.js
+[Clone]:https://github.com/yolain/utilo/blob/main/src/Clone/index.js
+[Date]:https://github.com/yolain/utilo/blob/main/src/Date/index.js
+[Dom]:https://github.com/yolain/utilo/blob/main/src/Dom/index.js
+[Draw]:https://github.com/yolain/utilo/blob/main/src/Draw/index.js
+[Format]:https://github.com/yolain/utilo/blob/main/src/Format/index.js
+[Function]:https://github.com/yolain/utilo/blob/main/src/Function/index.js
+[Keycode]:https://github.com/yolain/utilo/blob/main/src/Keycode/index.js
+[Number]:https://github.com/yolain/utilo/blob/main/src/Number/index.js
+[Password]:https://github.com/yolain/utilo/blob/main/src/Password/index.js
+[Random]:https://github.com/yolain/utilo/blob/main/src/Random/index.js
+[Regexp]:https://github.com/yolain/utilo/blob/main/src/Regexp/index.js
+[String]:https://github.com/yolain/utilo/blob/main/src/String/index.js
+[Type]:https://github.com/yolain/utilo/blob/main/src/Type/index.js
+[Ua]:https://github.com/yolain/utilo/blob/main/src/Ua/index.js
+[Url]:https://github.com/yolain/utilo/blob/main/src/Url/index.js
 
 
