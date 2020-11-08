@@ -1,6 +1,6 @@
 {
   "name": "utilo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A utils collection tool",
   "main": "src/index.js",
   "scripts": {
