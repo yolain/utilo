@@ -4,12 +4,13 @@ import Lang from '../Lang'
 /**
  * formatTime 格式化日期与时间
  * @since 1.0.0
- * @param {Number} time 传入时间戳 默认当前时间
+ *        1.0.2 add: `format` 类型 `Y年M月D日 h时m分s秒` 和 'Y年M月D日'
  * @param {String} format 返回日期时间的格式
+ * @param {Number} time 传入时间戳 默认当前时间
  * @param {String} lang 语言
- * @returns {String}
+ * @return {String}
  */
-export function formatTime(time = 0, format = 'YYYY-MM-DD hh:mm:ss', lang = 'zh-CN') {
+export function formatTime( format = 'YYYY-MM-DD hh:mm:ss',time = 0, lang = 'zh-CN') {
 
   testLang(lang)
   testDateFormat(format)
@@ -36,6 +37,10 @@ export function formatTime(time = 0, format = 'YYYY-MM-DD hh:mm:ss', lang = 'zh-
 
   /* 判断有没有指定的时间格式 */
   switch (format) {
+    case 'Y年M月D日 h时m分s秒':
+      return `${arg.year}年${date.getMonth()+1}月${date.getDate()}日 ${arg.hours}时${arg.minutes}分${arg.seconds}秒`
+    case 'Y年M月D日':
+      return `${arg.year}年${date.getMonth()+1}月${date.getDate()}日`
     case 'YYYY-MM-DD hh:mm:ss':
       return `${arg.year}-${arg.month}-${arg.day} ${arg.hours}:${arg.minutes}:${arg.seconds}`
     case 'YYYY/MM/DD hh:mm:ss':
@@ -92,13 +97,16 @@ export function formatTime(time = 0, format = 'YYYY-MM-DD hh:mm:ss', lang = 'zh-
 /**
 * changeTimezone 更改时区时间
 * @since 1.0.0
+*        1.0.2 update:修改传入顺序
+* @param {Number} timezone 传入需要转换的时区
 * @param {Number} time 时间戳
-* @param {Number} timezone 当前时区
-* @returns {String}
+* @return {Number} 该地区当前时间戳
 */
-export function exchangeTimezone(time = 0,timezone){
+export function changeTimezone(timezone,time = 0){
   testTimeZone(timezone)
-  let offset_GMT = new Date().getTimezoneOffset(); // 本地时间和格林威治的时间差，单位为分钟
+  while (time!=0 && time.toString().length < 13) time += '0'
+  time = parseInt(time)
+  let offset_GMT = new Date(time).getTimezoneOffset(); // 本地时间和格林威治的时间差，单位为分钟
   let nowDate = time ? time : new Date().getTime(); // 本地时间距 1970 年 1 月 1 日午夜（GMT 时间）之间的毫秒数
   return  nowDate + offset_GMT * 60 * 1000 + timezone * 60 * 60 * 1000
 }

@@ -5,7 +5,7 @@ import {accMul} from "../Number";
 * @since 1.0.0
 * @param {Number} x
 * @param {Number} val
-* @returns {Number}
+* @return {Number}
 */
 export function toDecimal(x,val) {
   let f = parseFloat(x);
@@ -29,7 +29,7 @@ export function toDecimal(x,val) {
 * @since 1.0.0
 * @param {Number} x
 * @param {Number | String} val
-* @returns {Number}
+* @return {Number}
 */
 export function toFloat(x,val){
   x = parseInt(x)
@@ -39,7 +39,7 @@ export function toFloat(x,val){
 * filterZero 抹零
 * @since 1.0.0
 * @param {Number | String} val
-* @returns {Number}
+* @return {Number}
 */
 export function filterZero(val){
   return parseFloat(val)
@@ -49,7 +49,7 @@ export function filterZero(val){
 * @since 1.0.0
 * @param {Number | String} val 值
 * @param {Number | String} x 保留小数点位数
-* @returns {String}
+* @return {String}
 */
 export function money(val,x=2){
   let noNegative = true; //默认是正值。
@@ -82,7 +82,7 @@ export function money(val,x=2){
 * percent 百分比
 * @since 1.0.0
 * @param {Number | String} val 值
-* @returns {String}
+* @return {String}
 */
 export function percent(val){
   return parseFloat(accMul(val,100).toFixed(4)) + '%'
@@ -91,7 +91,7 @@ export function percent(val){
 * hidden 隐藏字段
 * @since 1.0.0
 * @param {String} str
-* @returns {String}
+* @return {String}
 */
 export function hidden(str) {
   return str ? str : '*****'
@@ -100,7 +100,7 @@ export function hidden(str) {
 * bankcard 格式化银行卡
 * @since 1.0.0
 * @param {String | Number} val
-* @returns {String}
+* @return {String}
 */
 export function bankcard(val) {
   return val.replace(/(.{4})/g, '$1 ')
@@ -112,7 +112,7 @@ export function bankcard(val) {
 * @param {Number} frontLen 起始不被遮盖的长度
 * @param {Number} endLen 结尾不被遮盖的长度
 * @param {String} hideStr 遮盖字符
-* @returns {String}
+* @return {String}
 */
 export function plusStr(str, frontLen, endLen,hideStr = '*') {
   if(str.length <= 2 ){

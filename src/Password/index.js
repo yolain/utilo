@@ -1,11 +1,12 @@
 import Regexp from '../Regexp'
 /*
-* level 获取密码强度
+* pwdLevel 获取密码强度
 * @since 1.0.0
+*        1.0.2 pwdLevel
 * @param {String} txt
-* @returns {Number}
+* @return {Number}
 */
-export function level(txt) {
+export function pwdLevel(txt) {
   let level = 0;
   if (txt.length < 6) {
     level = 0;

@@ -74,7 +74,7 @@ export function isFalse(o) {
   }
 }
 /**
- * isFalse 是否为真
+ * isTrue 是否为真
  * @since 1.0.0
  */
 export function isTrue(o) {
@@ -96,7 +96,7 @@ export function isNull (o) {
   return Object.prototype.toString.call(o).slice(8, -1) === 'Null'
 }
 /**
- * empty
+ * empty 是否为空
  * @params {Any} o
  * @return {Boolean}
  */
@@ -106,7 +106,7 @@ export function empty(o) {
 
 
 /**
- * istrCard  是否为身份证号
+ * isIdCard  是否为身份证号
  * @param  {String|Number} str
  * @param  {Boolean} strict 是否严格
  * @return {Boolean}

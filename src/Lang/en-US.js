@@ -30,5 +30,9 @@ module.exports = {
     second_ago:' second ago',
     seconds_ago:' seconds ago',
     just:'just now'
+  },
+
+  nickname:{
+
   }
 }

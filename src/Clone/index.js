@@ -1,10 +1,11 @@
 import {typeOf} from '../Type'
 
 /**
-* copy 浅拷贝
+* clone 浅拷贝
 * @since 1.0.0
+*        1.0.2 rename:clone
 * @param {Object | Array} data
-* @returns {Object | Array}
+* @return {Object | Array}
 */
 export function copy(data){
   let data2 = Array.isArray(data) ? [] : {};
@@ -15,12 +16,13 @@ export function copy(data){
 }
 
 /**
-* deep 深拷贝
+* deepCopy 深拷贝
 * @since 1.0.0
+*        1.0.2 rename:deepCopy
 * @param {Object | Array} data
-* @returns {Object | Array}
+* @return {Object | Array}
 */
-export function deep(data){
+export function deepCopy(data){
   const t = typeOf(data);
   let o;
 
@@ -34,11 +36,11 @@ export function deep(data){
 
   if (t === 'array') {
     for (let i = 0; i < data.length; i++) {
-      o.push(deep(data[i]));
+      o.push(deepCopy(data[i]));
     }
   } else if ( t === 'object') {
     for (let i in data) {
-      o[i] = deep(data[i]);
+      o[i] = deepCopy(data[i]);
     }
   }
   return o;

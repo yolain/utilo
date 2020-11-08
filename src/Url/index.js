@@ -2,7 +2,7 @@
 * toQueryString url参数转对象
 * @since 1.0.0
 * @param {String} url default:window.location.href
-* @returns {Object}
+* @return {Object}
 */
 export function toQueryString(url) {
   url = !url ? window.location.href : url;
@@ -26,7 +26,7 @@ export function toQueryString(url) {
 * stringify 对象序列化
 * @since 1.0.0
 * @param {Object} obj
-* @returns {String}
+* @return {String}
 */
 export function stringify(obj) {
   if (!obj) return '';

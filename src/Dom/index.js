@@ -1,7 +1,7 @@
 /**
 * getScrollTop 获取滚动条距离
 * @since 1.0.0
-* @returns {Number}
+* @return {Number}
 */
 export function getScrollTop() {
   return (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
@@ -11,7 +11,7 @@ export function getScrollTop() {
 * setScrollTop 设置滚动条到顶部的距离
 * @since 1.0.0
 * @param {Number} value
-* @returns {Number}
+* @return {Number}
 */
 export function setScrollTop(value) {
   window.scrollTo(0, value);
@@ -58,7 +58,7 @@ const requestAnimFrame = (function () {
 * offset 获取元素的距离document的位置
 * @since 1.0.0
 * @param {HTMLElement} ele
-* @returns { {left:Number,top:Number} }
+* @return { {left:Number,top:Number} }
 */
 export function offset(ele) {
   let pos = {
@@ -74,13 +74,14 @@ export function offset(ele) {
 }
 
 /**
-* windowResize 软键盘缩回、弹起回调
+* resize 软键盘缩回、弹起回调
 * 当软件键盘弹起会改变当前 window.innerHeight，监听这个值变化
 * @since 1.0.0
+*        1.0.2 rename:resize
 * @param {Function} downCb 当软键盘弹起后，缩回的回调
-* @returns {Function} upCb 当软键盘弹起的回调
+* @return {Function} upCb 当软键盘弹起的回调
 */
-function windowResize(downCb, upCb) {
+function resize(downCb, upCb) {
   const clientHeight = window.innerHeight;
   downCb = typeof downCb === 'function' ? downCb : function () {}
   upCb = typeof upCb === 'function' ? upCb : function () {}

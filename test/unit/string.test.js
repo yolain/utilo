@@ -1,12 +1,12 @@
-describe('String:API',()=> {
+describe('String',()=> {
 
-  describe('#trim()', () => {
-    it('返回正确去除空格的字符串', () => {
+  describe('trim()', () => {
+    it('去除空格', () => {
       let str = ' find a girl '
-      assert(Utilo.String.trim(str) == 'findagirl')
-      assert(Utilo.String.trim(str,2) == 'find a girl')
-      assert(Utilo.String.trim(str,3) == 'find a girl ')
-      assert(Utilo.String.trim(str,4) == ' find a girl')
+      assert(Utilo.trim(str) == 'findagirl')
+      assert(Utilo.trim(str,2) == 'find a girl')
+      assert(Utilo.trim(str,3) == 'find a girl ')
+      assert(Utilo.trim(str,4) == ' find a girl')
     })
   })
 })

@@ -12,10 +12,9 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       // {pattern: 'test/**/*_test.js', watched: true}
-      {pattern: 'script.js'},
-      {pattern: '**/*.test.js', watched: true}
+      '**/*.test.js',
+      'script.js'
     ],
-
 
     // list of files to exclude
     exclude: [
@@ -28,7 +27,7 @@ module.exports = function(config) {
       'karma-webpack',
       'karma-chrome-launcher',
       'karma-coverage',
-      'karma-mocha-reporter'
+      'karma-mocha-reporter',
     ],
 
     // preprocess matching files before serving them to the browser
@@ -46,7 +45,7 @@ module.exports = function(config) {
             test: /\.js$/, loader: 'babel-loader',
             exclude: /(node_modules|libs)/,
             query: {
-              presets: ['env'],
+              presets: ['env','es2015','stage-0'],
               plugins: ['istanbul']
             }
           }
@@ -64,7 +63,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress', 'mocha', 'coverage'],
+    reporters: ['mocha', 'coverage'],
 
     // mocha reporter options
     mochaReporter: {
@@ -84,14 +83,10 @@ module.exports = function(config) {
 
     // coverage reporter options
     coverageReporter: {
-      type : 'html',
-      dir : 'coverage',
-      subdir: function(browser) {
-        // normalization process to keep a consistent browser name across different
-        // OS
-        return browser.toLowerCase().split(/[ /-]/)[0];
-      },
-      includeAllSources: true
+      type: 'lcov',
+      dir: 'coverage/',
+      subdir: '.'
+      // Would output the results into: .'/coverage/'
     },
 
 
@@ -122,9 +117,10 @@ module.exports = function(config) {
       }
     },
 
+
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: true,
+    singleRun: false,
 
     // Concurrency level
     // how many browser should be started simultaneous

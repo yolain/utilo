@@ -3,7 +3,7 @@
 * @since 1.0.0
 * @param {Number} min
 * @param {Number} max
-* @returns {Number}
+* @return {Number}
 */
 export function rand(min, max) {
   if (arguments.length === 2) {
@@ -18,7 +18,7 @@ export function rand(min, max) {
 * @since 1.0.0
 * @param {Number} arg1
 * @param {Number} arg2
-* @returns {Number}
+* @return {Number}
 */
 export function accAdd(arg1, arg2) {
   let r1, r2, max;
@@ -32,7 +32,7 @@ export function accAdd(arg1, arg2) {
  * @since 1.0.0
  * @param {Number} arg1
  * @param {Number} arg2
- * @returns {Number}
+ * @return {Number}
  */
 export function accSub(arg1, arg2) {
   let r1, r2, max, min;
@@ -48,7 +48,7 @@ export function accSub(arg1, arg2) {
  * @since 1.0.0
  * @param {Number} arg1
  * @param {Number} arg2
- * @returns {Number}
+ * @return {Number}
  */
 export function accMul(arg1, arg2) {
   let max = 0, s1 = arg1.toString(), s2 = arg2.toString();
@@ -61,7 +61,7 @@ export function accMul(arg1, arg2) {
  * @since 1.0.0
  * @param {Number} arg1
  * @param {Number} arg2
- * @returns {Number}
+ * @return {Number}
  */
 export function accDiv(arg1, arg2) {
   var t1 = 0, t2 = 0, r1, r2;

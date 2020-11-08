@@ -6,7 +6,7 @@ import {testArray,testInclude} from "../Test";
 * @since 1.0.0
 * @param {Array} array
 * @param {Number} size
-* @returns {Array}
+* @return {Array}
 */
 export function chunk(array,size= 1){
   testArray(array)
@@ -31,7 +31,7 @@ export function chunk(array,size= 1){
 * @param {Array} array
 * @param {Number} type 1:从小到大 2:从大到小 3:随机
 * @param {String} key 根据键值排序 默认为空
-* @returns {Array}
+* @return {Array}
 */
 export function sort(array,type = 1,key= null){
   type = parseInt(type)
@@ -52,7 +52,7 @@ export function sort(array,type = 1,key= null){
 * unique 数组去重
 * @since 1.0.0
 * @param {Array} array
-* @returns {Array}
+* @return {Array}
 */
 export function unique(array){
   if ( Array.hasOwnProperty('from') ) {

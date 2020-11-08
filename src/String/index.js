@@ -3,7 +3,7 @@
 * @since 1.0.0
 * @param {String} str
 * @param {Number} type 1-所有空格 2-前后空格 3-前空格 4-后空格
-* @returns {String}
+* @return {String}
 */
 export function trim(str,type= 1){
   type = parseInt(type)
@@ -26,7 +26,7 @@ export function trim(str,type= 1){
 * @since 1.0.0
 * @param {String} str
 * @param {Number} type 1-首字母大写  2-首页母小写  3-大小写转换  4-全部大写  5-全部小写
-* @returns {String}
+* @return {String}
 */
 export function changeCase(str,type){
   type = type || 4
@@ -61,7 +61,7 @@ export function changeCase(str,type){
 * filterTag 过滤html标签
 * @since 1.0.0
 * @param {String} str
-* @returns {String}
+* @return {String}
 */
 export function filterTag(str){
   str = str.replace(/&/ig, "&amp;");
