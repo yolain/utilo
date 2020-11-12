@@ -53,14 +53,14 @@ export function filterZero(val){
 */
 export function money(val,x=2){
   let noNegative = true; //默认是正值。
+  let zheng=val.split(".")[0];
+  let dian=val.split(".")[1];
   val=parseFloat(val+"").toFixed();
   val=val+""; //转换成字符串
   if(parseFloat(val) < 0){ //是负数
     val = Math.abs(val).toFixed(x) + "";
     noNegative = false;
   }
-  let zheng=val.split(".")[0];
-  let dian=val.split(".")[1];
   //将整数部分，利用字符串的charAt() 方法，转换成数组。
   let zhengArr=[];
   for(let i=0;i<zheng.length;i++){
