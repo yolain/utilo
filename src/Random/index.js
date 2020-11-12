@@ -1,16 +1,26 @@
 import Lang from '../Lang'
-/**
+/*
  * rand 随机数
- * @since 1.0.2
- * @param {Number} min
- * @param {Number} max
+ * @since 1.0.0
+ *        1.0.3 move:move to random module
+ *              add:decimalNum 新增小数随机
+ * @param {Number} minNum 最小值
+ * @param {Number} maxNum 最大值
+ * @param {Number} decimalNum 如需小数随机 需设置小数点后位数
  * @return {Number}
  */
-export function rand(min, max) {
-  if (arguments.length === 2) {
-    return Math.floor(min + Math.random() * ( (max+1) - min ))
-  }else{
-    return null;
+export function rand(minNum,maxNum,decimalNum) {
+  let max = 0, min = 0;
+  minNum <= maxNum ? (min = minNum, max = maxNum) : (min = maxNum, max = minNum);
+  switch (arguments.length) {
+    case 1:
+      return Math.floor(Math.random() * (max + 1));
+    case 2:
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    case 3:
+      return (Math.random() * (max - min) + min).toFixed(decimalNum);
+    default:
+      return Math.random();
   }
 }
 /**

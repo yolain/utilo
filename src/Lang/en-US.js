@@ -33,6 +33,13 @@ module.exports = {
   },
 
   nickname:{
+    header:['fantastic','amazing','intelligent','doleful','pretty','fierce','canny'],
+    footer:['king','queen','boy','girl','apple','banana','watermelon','orange','tree','pet','monkey','pig','duck']
+  },
 
+  name:{
+    family:['Smith','Johnson','Williams','Brown','Jones','Miller','Davis','Garcia','Rodriguez','Wilson'],
+    male:["Andrew", "Armand", "Adrian ", "Albert", "Allen", "Barton", "Brian", "Bruce", "Charles", "Baron", "Conrad", "Colin", "Clark", "Carl", "Dick", "Dean", "Edward", "George", "Gary", "Herman", "James", "Jacob"],
+    female:['Beverly','Carol','Isabella','Morgan','Sophia','Emma','Mia','Daisy','Sarah','fiona','Taylor']
   }
 }

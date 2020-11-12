@@ -407,8 +407,6 @@ plusStr('18812340000',3,4) //-> 188****0000
 
 ### [Number] (数字) 
 
-#### rand 随机数
-
 #### accAdd 高精度加法
 
 #### accSub 高精度减法
@@ -425,6 +423,23 @@ plusStr('18812340000',3,4) //-> 188****0000
 
 
 ### [Regexp] (正则) 
+
+### [Random] (随机) `v1.0.3` 
+```js
+import {rand} from 'utilo'
+/*
+ * rand 随机数
+ * @since 1.0.0
+ *        1.0.3 move:Random module from Number
+ *              add:decimalNum 新增小数随机
+ * @param {Number} minNum 最小值
+ * @param {Number} maxNum 最大值
+ * @param {Number} decimalNum 如需小数随机 需设置小数点后位数
+ * @return {Number}
+ */
+rand(1,10) // 随机1~10的整数
+rand(0.05,1,2) // 随机0.05~1的保留两位的小数
+```
 
 
 ### [String] (字符串) 
