@@ -18,8 +18,7 @@ export function formatTime( format = 'YYYY-MM-DD hh:mm:ss',time = 0, lang = 'zh-
   const now = new Date().getTime()
   if (!time) time = now
   while (time.toString().length < 13) time += '0'
-  const date = new Date(time)
-  date.getMonth()
+  const date = new Date(parseInt(time))
   /* 补0 */
   const formatNumber = (n)=>{
     const str = n.toString()
@@ -42,6 +41,7 @@ export function formatTime( format = 'YYYY-MM-DD hh:mm:ss',time = 0, lang = 'zh-
     case 'Y年M月D日':
       return `${arg.year}年${date.getMonth()+1}月${date.getDate()}日`
     case 'YYYY-MM-DD hh:mm:ss':
+    default:
       return `${arg.year}-${arg.month}-${arg.day} ${arg.hours}:${arg.minutes}:${arg.seconds}`
     case 'YYYY/MM/DD hh:mm:ss':
       return `${arg.year}/${arg.month}/${arg.day} ${arg.hours}:${arg.minutes}:${arg.seconds}`
