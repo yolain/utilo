@@ -55,7 +55,7 @@ export function money(val,x=2){
   let noNegative = true; //默认是正值。
   let zheng=val.split(".")[0];
   let dian=val.split(".")[1];
-  val=parseFloat(val+"").toFixed();
+  val=parseFloat(val+"").toFixed(x);
   val=val+""; //转换成字符串
   if(parseFloat(val) < 0){ //是负数
     val = Math.abs(val).toFixed(x) + "";
