@@ -3,23 +3,23 @@ import {accMul} from "../Number";
 /**
 * toDecimal 保留小数点${x}位 (会四舍五入)
 * @since 1.0.0
-* @param {Number} x
 * @param {Number} val
+* @param {Number} x
 * @return {Number}
 */
-export function toDecimal(x,val) {
+export function toDecimal(val,x=2) {
   let f = parseFloat(x);
   if (isNaN(f)) {
     return false;
   }
-  f = Math.round(x*10**val)/10**val;
+  f = Math.round(val*10**x)/10**x;
   let s = f.toString();
   let rs = s.indexOf('.');
   if (rs < 0) {
     rs = s.length;
     s += '.';
   }
-  while (s.length <= rs + val) {
+  while (s.length <= rs + x) {
     s += '0';
   }
   return s;
@@ -27,11 +27,11 @@ export function toDecimal(x,val) {
 /**
 * toFloat 保留小数点${x}位 (截断)
 * @since 1.0.0
-* @param {Number} x
 * @param {Number | String} val
+* @param {Number} x
 * @return {Number}
 */
-export function toFloat(x,val){
+export function toFloat(val,x){
   x = parseInt(x)
   return (toDecimal(val,x+1)).toString().slice(0,-1)
 }
