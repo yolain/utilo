@@ -39,23 +39,6 @@ export function isNumber(o){
 }
 
 /**
- * isObject 是否为对象
- * @since 1.0.0
- */
-export function isObject(o){
-  const type = typeof o
-  return o != null && (type === 'Object' || type === 'Function')
-}
-
-/**
- * isArray 是否为数组
- * @since 1.0.0
- */
-export function isArray(o){
-  return Object.prototype.toString.call(o)== '[object Array]'
-}
-
-/**
  * isBoolean 是否为布尔值
  * @since 1.0.0
  */
@@ -102,6 +85,58 @@ export function isNull (o) {
  */
 export function empty(o) {
   return isUndefined(o) || isNull(o) || isNaN(o)
+}
+
+/**
+ * isEmptyObject 判断是否为空对象
+ * @param {*} object 源对象
+ * @since 1.0.7
+ */
+export function isEmptyObject (object) {
+  return Object.keys(object).length === 0
+}
+
+/**
+ * isObject 判断是否为对象
+ * @param {*} object
+ * @since 1.0.7
+ */
+export function isObject (object) {
+  return Object.prototype.toString.call(object) === '[object Object]'
+}
+
+/**
+ * isArray 判断是否为数组
+ * @param {*} array
+ * @since 1.0.7
+ */
+export function isArray (array) {
+  return Object.prototype.toString.call(array) === '[object Array]'
+}
+
+/**
+ * isEmpty 判断是否为空
+ * @param {*} value  源对象
+ * @since 1.0.7
+ */
+export function isEmpty (value) {
+  if (isArray(value)) {
+    return value.length === 0
+  }
+  if (isObject(value)) {
+    return isEmptyObject(value)
+  }
+  return !value
+}
+
+/**
+ * 判断是否在数组中
+ * @param {*} search
+ * @param {*} array
+ * @since 1.0.7
+ */
+export function inArray (search, array) {
+  return array.includes(search)
 }
 
 

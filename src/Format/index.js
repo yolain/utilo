@@ -52,6 +52,7 @@ export function filterZero(val){
 * @return {String}
 */
 export function money(val,x=2){
+  if(typeof val == 'number') val = val.toString()
   let noNegative = true; //默认是正值。
   let zheng=val.split(".")[0];
   let dian=val.split(".")[1];
