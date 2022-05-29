@@ -18,7 +18,7 @@ export function testInclude(value,array){
 export function testDateFormat(value){
   testInclude(value,
 ['YYYY-MM-DD hh:mm:ss', 'YYYY/MM/DD hh:mm:ss',
-      'YYYY-MM-DD', 'YYYY/MM/DD',
+      'YYYY-MM-DD', 'YYYY/MM/DD', 'YYYY-MM','YYYY/MM',
       'MM-DD', 'MM/DD', 'hh:mm:ss', 'hh:mm',
       'computed', 'timeAgo'
   ])

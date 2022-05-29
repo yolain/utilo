@@ -49,6 +49,10 @@ export function formatTime( format = 'YYYY-MM-DD hh:mm:ss',time = 0, lang = 'zh-
       return `${arg.year}-${arg.month}-${arg.day}`
     case 'YYYY/MM/DD':
       return `${arg.year}-${arg.month}-${arg.day}`
+    case 'YYYY-MM':
+      return `${arg.year}-${arg.month}`
+    case 'YYYY/MM':
+      return `${arg.year}/${arg.month}`
     case 'MM-DD':
       return `${arg.month}-${arg.day}`
     case 'MM/DD':
