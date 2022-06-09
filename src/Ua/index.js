@@ -1,6 +1,6 @@
 // 参考 https://github.com/mumuy/browser
 
-let u = navigator.userAgent
+let u = navigator ? navigator.userAgent : ''
 
 let match = {
   //内核
@@ -47,6 +47,7 @@ for (let key in hash) {
 
 
 function getLanguage() {
+  if(!navigator) return
   // @ts-ignore
   return (navigator.browserLanguage || navigator.language).toLowerCase()
 }
